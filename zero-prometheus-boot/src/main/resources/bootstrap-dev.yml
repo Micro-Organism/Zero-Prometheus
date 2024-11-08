@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: zero-prometheus-boot
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+    metrics:
+        tags:
+            application: ${spring.application.name}
